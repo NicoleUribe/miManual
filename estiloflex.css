@@ -46,20 +46,9 @@ h3,p{
 img:hover {-webkit-transform:scale(1.3);transform:scale(1.3);}
 .contenedor {overflow:hidden;}
 
-div.MDM,div.GitHub,div.MaterialDesign{
-    background-color: rgba(191, 143, 115, 0.70);
-    height: 200px;
-    width: 420px;
-}
-div.HTML,div.AdobeColor,div.ColorPicker{
-    background-color:rgba(217, 157, 104, 0.70);
-    height: 200px;
-    width: 420px;
-}
-
 img{
-    height: 100px;
-    width: 100px;
+    height: 400px;
+    width: 500px;
 }
      body {
         height: 400px;

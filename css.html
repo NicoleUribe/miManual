@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="icon" href="ajolocatito.jpg">
+
+</head>
+<body>
+    <header>
+        <h3 class ="Manual">Mi manual</h3>
+        <nav>
+            <a href="index.html" class="menu">Recursos</a>
+            <a href="html.html" class="menu">HTML</a>
+            <a href="css.html" class="menu">CSS</a>
+            <a href="flex.html" class="menu">FlexBox</a>
+         </nav>
+    </header>
+    <h1>Colores</h1>
+    <div style="text-align:center;">
+        <table border ="1" style="margin: 0 auto;">
+            <thead>
+                <tr>
+                    <th>Documentación</th>
+                    <th>Descripción</th>
+                    <th>Sintaxis</th>
+                </tr>
+            </thead>
+            <tbody>
+                    <tr>
+                        <td><a href="https://developer.mozilla.org/es/docs/Web/CSS/color" target="_blank">Color</a></td>
+                        <td>Se especifica el valor color </td>
+                        <td>p{ color: black;}</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://developer.mozilla.org/es/docs/Glossary/RGB" target="_blank">RGB</a></td>
+                        <td>Definir un color por la mezcla de los 3 colores primarios</td>
+                        <td>p{ color: rgb(30,30,30);}</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.w3schools.com/cssref/func_rgba.asp" target="_blank">RGBA</a></td>
+                        <td>Definir la transparencia de un color</td>
+                        <td>p{ color: rgba(30,30,30);}</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsl" target="_blank">HSL</a></td>
+                        <td>p{ color: hsl(h,s,l);}</td>
+                        <td>Expresa un color sRGB según sus componentes de tono</td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color_value/hsla" target="_blank">HSLA</a></td>
+                        <td>p{ color:hsla(h,s,l,a);}</td>
+                        <td>Podemos definir la transparencia de un color usando la función hsla</td>
+                    </tr>
+                  
+            </tbody>
+        </table>
+
+        </div>
+        <h1>Selectores</h1>
+        <div style="text-align:center;">
+            <table border ="1" style="margin: 0 auto;">
+                <thead>
+                    <tr>
+                        <th>Documentación</th>
+                        <th>Descripción</th>
+                        <th>Sintaxis</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#the_universal_selector" target="_blank">Selector Universal(*)</a></td>
+                            <td>Selecciona todos los elementos</td>
+                            <td>*{ declaraciones; }</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#type_selectors" target="_blank">Selectores de tipo</a></td>
+                            <td>Permite seleccionar elementos usando el nombre del elemento</td>
+                            <td>elemento{ declaraciones; }</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#type_selectors" target="_blank">Selector de clase</a></td>
+                            <td>Permite seleccionar elementos en función de los valores del atributo class de los elementos. Para que los elementos sean seleccionados, su atributo class debe incluir un valor que coincida con el valor del selector</td>
+                            <td>p class=”foo bar”> ¡HOLA MUNDO!
+                                p class=”foo baz” > ¡ADIÓS MUNDO!
+                                .foo{ declaraciones; }</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#id_selectors" target="_blank">Selector de ID</a></td>
+                            <td>Permite seleccionar un elemento en función del valor del atributo ID del elemento. Para que el elemento sea seleccionado, su atributo id debe coincidir exactamente con el valor dado en el selector.</td>
+                            <td>#foo{ declaraciones; }</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors#attribute_selectors" target="_blank">Selector de Atributos</a></td>
+                            <td>Permite seleccionar elementos en función de la presencia o del valor de un determinado atributo.</td>
+                            <td>selector[attr] { … }</td>
+                        </tr>
+                      
+                </tbody>
+            </table>
+            
+            </div>
+            <h1>Unidades Absolutas</h1>
+            <div style="text-align:center;">
+                <table border ="1" style="margin: 0 auto;">
+                    <thead>
+                        <tr>
+                            <th>Unidad</th>
+                            <th>Nombre</th>
+                            <th>Equivalente</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                            <tr>
+                                <td><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Type_Class_and_ID_Selectors#the_universal_selector" target="_blank">PX</a></td>
+                                <td>Pixel</td>
+                                <td>0.265</td>
+                            </tr>
+                    </tbody>
+                </table>
+                
+                </div>
+                <h1>Modelo de cajas</h1>
+                <div style="text-align:center;">
+                    <table border ="1" style="margin: 0 auto;">
+                        <thead>
+                            <tr>
+                                <th>Propiedad</th>
+                                <th>Valor Inicial</th>
+                                <th>Heredable</th>
+                                <th>Valores</th>}
+                                <th>Descripcion</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>width</td>
+                                <td>auto</td>
+                                <td>no</td>
+                                <td>Auto longitud</td>
+                                <td>Establece el ancho de un elemento</td>
+                            </tr>
+                            <tr>
+                                <td>min-width</td>
+                                <td>auto</td>
+                                <td>no</td>
+                                <td>Longitud, porcentaje , auto</td>
+                                <td>Establece el ancho mínimo de un elemento</td>
+                            </tr>
+                            <tr>
+                                <td>max-with</td>
+                                <td>none</td>
+                                <td>no</td>
+                                <td>Longitud, porcentaje, none</td>
+                                <td>Establece el ancho máximo de un elemento.</td>
+                            </tr>
+                            <tr>
+                                <td>height</td>
+                                <td>auto</td>
+                                <td>no</td>
+                                <td>Longitud, porcentaje, auto</td>
+                                <td>Especifica la altura de un elemento</td>
+                            </tr>
+                            <tr>
+                                <td>min-height</td>
+                                <td>auto</td>
+                                <td>no</td>
+                                <td>Longitud, porcentaje, auto</td>
+                                <td>Establece la altura mínima de un elemento</td>
+                            </tr>
+                            <tr>
+                                <td>max-height</td>
+                                <td>auto</td>
+                                <td>no</td>
+                                <td>Longitud, porcentaje, auto</td>
+                                <td>Establece la altura maxima de un elemento</td>
+                            </tr>
+                            <tr>
+                                <td>padding-top</td>
+                                <td>0</td>
+                                <td>no</td>
+                                <td>Longitud, porcentaje</td>
+                                <td>Establece la altura del área de relleno en la parte superior de un elemento</td>
+                            </tr>
+                            <tr>
+                                <td>padding-right</td>
+                                <td>0</td>
+                                <td>no</td>
+                                <td>Longitud, porcentaje</td>
+                                <td>Establece el ancho del área de relleno a la derecha de un elemento</td>
+                            </tr>
+                            <tr>
+                                <td>padding-buttom</td>
+                                <td>0</td>
+                                <td>no</td>
+                                <td>Longitud, porcentaje</td>
+                                <td>Establece el espacio de relleno requerido en la parte inferior del elemento</td>
+                            </tr>
+                            <tr>
+                                <td>padding</td>
+                                <td>0 0 0 0</td>
+                                <td>no</td>
+                                <td>Longitud, porcentaje</td>
+                                <td>Establece el espacio de relleno requerido por todos los lados de un elemento</td>
+                            </tr>
+                            <tr>
+                                <td>border</td>
+                                <td>Propiedades individuales</td>
+                                <td>no</td>
+                                <td>border-width, border style, border-color</td>
+                                <td>Permite definir en una única regla todos los bordes de los elementos seleccionados</td>
+                            </tr>
+                            <tr>
+                                <td>border-width</td>
+                                <td>medio</td>
+                                <td>no</td>
+                                <td>thin, medium, thick, length</td>
+                                <td>La propiedad border-width define el ancho del borde.</td>
+                            </tr>
+                            <tr>
+                                <td>border-style</td>
+                                <td>none</td>
+                                <td>no</td>
+                                <td>none, hiden, dotted, dashed, solid, double, groove, ridge, inset, outset</td>
+                                <td>Establece el estilo de línea para los cuatro lados del borde de un elemento</td>
+                            </tr>
+                            <tr>
+                                <td>border-color</td>
+                                <td>color del elemento</td>
+                                <td>no</td>
+                                <td>color, transparent</td>
+                                <td>Es un atajo para definir el color de los cuatro bordes de un elemento</td>
+                            </tr>
+                            <tr>
+                                <td>margin-top</td>
+                                <td>0</td>
+                                <td>no</td>
+                                <td>Longitud, porcentaje, auto</td>
+                                <td>Establece el área de margen en la parte superior de un elemento</td>
+                            </tr>
+                            <tr>
+                                <td>margin-right</td>
+                                <td>0</td>
+                                <td>no</td>
+                                <td>Longitud, porcentaje</td>
+                                <td>El margen derecho de propiedad establece el margen derecho de un elemento</td>
+                            </tr>
+                            <tr>
+                                <td>margin-bottom</td>
+                                <td>0</td>
+                                <td>no</td>
+                                <td>Longitud, porcentaje</td>
+                                <td>Es la propiedad de un elemento que establece el espacio requerido en la parte inferior de un elemento</td>
+                            </tr>
+                            <tr>
+                                <td>margin-left</td>
+                                <td>0</td>
+                                <td>no</td>
+                                <td>Longitud, porcentaje, auto</td>
+                                <td> establece el ancho del área de relleno a la derecha de un elemento</td>
+                            </tr>
+                            <tr>
+                                <td>margin</td>
+                                <td>0</td>
+                                <td>no</td>
+                                <td>Longitud, porcentaje</td>
+                                <td>Establece el margen para los cuatro lados</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h1>Flexbox</h1>
+                <h5>FlexBox significa diseño de caja flexible </h5>
+            <div style="text-align:center;">
+                      
+                  <table>
+                    <tr>
+                        <td>TERMINOS IMPORTANTES</td>
+                        <td><img src=flexon.png height=400 width=500 ></td>
+                        </tr>
+                    <tr>
+                        <Td><p>Lineas flexibles</p>
+                        <td><img src=lineas.png height=400 width=500 ></td>
+                    </TR>
+                   
+                </TABLE>
+                <h2><center><font color=#729691>FLEXBOX</font></h2>
+                    <hr width=100%>
+                <table>
+                    <tr>
+                      <th scope="col">Elemento </th>
+                      <th scope="col"><center>Ejemplo</center></th>
+                      <th scope="col">Enlace </th>
+                     
+                    </tr>
+                  
+                    <tr>
+                      <td>EJE PRINCIPAL DE IZQUIERDA A DERECHA</td>
+                      <td><p><center><img src=direction-row.png alt="miManual" align=center  height=400 width=500></center></p>
+                        
+            
+                            HTML
+                            <pre>
+                                &lt;div class="contenedor"&gt;
+                                &lt;div&gt;E1&lt;/div&gt;
+                                &lt;div&gt;E2&lt;/div&gt;
+                                &lt;div&gt;E3&lt;/div&gt;
+                                &lt;/div&gt;
+                            </pre> 
+                         <pre><code>                      
+                            CSS
+                            .contenedor{
+                                display: flex;
+                                flex-direction: row; [VALOR  POR DEFECTO] 
+                            }
+                          </code></pre>
+                         </td>
+                      <td><a href=https://f-beltran.github.io/flex-direccion-principal/>Documentacion</a></td>
+                     
+                    </tr>
+                  
+                    <tr>
+                        <td>EJE PRINCIPAL DE DERECHA A IZQUIERDA</td>
+                        <td><p><center><img src=direction-row-reverse.png alt="miManual" align=center  height=400 width=500></center></p>
+                          
+              
+                              HTML
+                              <pre>
+                                  &lt;div class="contenedor"&gt;
+                                  &lt;div&gt;E1&lt;/div&gt;
+                                  &lt;div&gt;E2&lt;/div&gt;
+                                  &lt;div&gt;E3&lt;/div&gt;
+                                  &lt;/div&gt;
+                              </pre> 
+                           <pre><code>                      
+                            CSS
+                            .contenedor{
+                                display: flex;
+                                flex-direction: row-reverse; 
+                            }
+                            </code></pre>
+                           </td>
+                        <td><a href=https://f-beltran.github.io/flex-direccion-principal/>Documentacion</a></td>
+                       
+                      </tr>
+                      <tr>
+                        <td>EJE PRINCIPAL DE ARRIBA A ABAJO</td>
+                        <td><p><center><img src=column.png alt="miManual" align=center  height=400 width=500></center></p>
+                          
+              
+                              HTML
+                              <pre>
+                                  &lt;div class="contenedor"&gt;
+                                  &lt;div&gt;E1&lt;/div&gt;
+                                  &lt;div&gt;E2&lt;/div&gt;
+                                  &lt;/div&gt;
+                              </pre> 
+                           <pre><code>                      
+                            CSS
+                            .contenedor{
+                                display: flex;
+                                flex-direction: column; 
+                            }
+                              
+                            </code></pre>
+                           </td>
+                        <td><a href=https://f-beltran.github.io/flex-direccion-principal/>Documentacion</a></td>
+                       
+                      </tr>
+                      <tr>
+                        <td>EJE PRINCIPAL DE ABAJO A ARRIBA</td>
+                        <td><p><center><img src=column-reverse.png alt="miManual" align=center  height=400 width=500></center></p>
+                          
+              
+                              HTML
+                              <pre>
+                                  &lt;div class="contenedor"&gt;
+                                  &lt;div&gt;E1&lt;/div&gt;
+                                  &lt;div&gt;E2&lt;/div&gt;
+                                  &lt;/div&gt;
+                              </pre> 
+                           <pre><code>                      
+                            CSS
+                            .contenedor{
+                                display: flex;
+                                flex-direction: column-reverse; 
+                            }
+                              
+                            </code></pre>
+                           </td>
+                        <td><a href=https://f-beltran.github.io/flex-direccion-principal/>Documentacion</a></td>
+                       
+                      </tr>
+                      <tr>
+                        <td> flex-wrap</td>
+                        <td><p><center><img src= flex-wrap.png alt="miManual" align=center  height=400 width=500></center></p>
+                           
+                           <pre><code>                      
+                            CSS
+                            .contenedor{
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: nowrap; [VALOR POR DEFECTO]
+                            }
+                             
+                            </code></pre>
+                           </td>
+                        <td><a href=https://f-beltran.github.io/flex-eje-transversal/>Documentacion</a></td>
+                       
+                      </tr>
+                      <tr>
+                        <td>align-content</td>
+                        <td><p><center><img src=align-content.jpg alt="miManual" align=center  height=400 width=500></center></p>
+                          <pre><code>                      
+                            CSS
+                            .contenedor{
+                                display: flex;
+                                flex-wrap: wrap;
+                                align-content: flex-start | flex-end | space-between | center | space-around | stretch; 
+                            }                 
+                            </code></pre>
+                           </td>
+                        <td><a href=https://f-beltran.github.io/flex-colocar-lineas/>Documentacion</a></td>
+                       
+                      </tr>
+                    
+                  </table>
+                
+                </div>
+    <footer>
+        <div>Nombre:</div>
+        <adrees>Nicole Alejandra Uribe Tapia</adrees>
+        <div>UCB</div>
+    </footer>
+</body>

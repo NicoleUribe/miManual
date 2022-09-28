@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estiloflex.css">
+    <link rel="icon" href="ajolocatito.jpg">
+
+</head>
+<body>
+    <header>
+        <h3 class ="Manual">Mi manual</h3>
+        <nav>
+            <a href="index.html" class="menu">Recursos</a>
+            <a href="html.html" class="menu">HTML</a>
+            <a href="css.html" class="menu">CSS</a>
+         </nav>
+    </header>
+                <h1>Flexbox</h1>
+                <h5>FlexBox significa diseño de caja flexible </h5>
+            <div style="text-align:center;">
+                      
+                  <table>
+                    <tr>
+                        <td>Terminos importantes</td>
+                        <td><img src=flexon.png height=400 width=500 ></td>
+                        </tr>
+                    <tr>
+                        <Td><p>Lineas flexibles</p>
+                        <td><img src=lineas.png height=400 width=500 ></td>
+                    </tr>
+                <table>
+                    <tr>
+                      <th scope="col">Elemento </th>
+                      <th scope="col">Codigo</th>
+                      <th scope="col">resultado </th>
+                     
+                    </tr>
+                  
+                    <tr>
+                      <td>Eje principal de izquierda a derecha</td>
+                      <td><img src=direction-row.png ></td>
+                        <td>
+                                        
+                            HTML
+                            <pre>
+                                &lt;div class="contenedor"&gt;
+                                &lt;div&gt;E1&lt;/div&gt;
+                                &lt;div&gt;E2&lt;/div&gt;
+                                &lt;div&gt;E3&lt;/div&gt;
+                                &lt;/div&gt;
+                            </pre> 
+                         <pre><code>                      
+                            CSS
+                            .contenedor{
+                                display: flex;
+                                flex-direction: row; [VALOR  POR DEFECTO] 
+                            }
+                          </code></pre>
+                        </td>
+                    </tr>
+                  
+                    <tr>
+                        <td>Eje principal de derecha a izquierda</td>
+                        <td><img src=direction-row-reverse.png ></td>
+                        <td>
+                                                      
+                            HTML
+                            <pre>
+                                &lt;div class="contenedor"&gt;
+                                &lt;div&gt;E1&lt;/div&gt;
+                                &lt;div&gt;E2&lt;/div&gt;
+                                &lt;div&gt;E3&lt;/div&gt;
+                                &lt;/div&gt;
+                            </pre> 
+                         <pre><code>                      
+                          CSS
+                          .contenedor{
+                              display: flex;
+                              flex-direction: row-reverse; 
+                          }
+                          </code></pre>
+                        </td> 
+                      </tr>
+                      <tr>
+                        <td>Eje principal de arriba abajo</td>
+                        <td><img src=column.png ></td>
+                        <td>
+                              HTML
+                              <pre>
+                                  &lt;div class="contenedor"&gt;
+                                  &lt;div&gt;E1&lt;/div&gt;
+                                  &lt;div&gt;E2&lt;/div&gt;
+                                  &lt;/div&gt;
+                              </pre> 
+                           <pre><code>                      
+                            CSS
+                            .contenedor{
+                                display: flex;
+                                flex-direction: column; 
+                            }
+                              
+                            </code></pre>
+                           </td>
+                      </tr>
+                      <tr>
+                        <td>Eje principal de abajo a arriba</td>
+                        <td><img src=column-reverse.png></td>
+                        <td>
+                              HTML
+                              <pre>
+                                  &lt;div class="contenedor"&gt;
+                                  &lt;div&gt;E1&lt;/div&gt;
+                                  &lt;div&gt;E2&lt;/div&gt;
+                                  &lt;/div&gt;
+                              </pre> 
+                           <pre><code>                      
+                            CSS
+                            .contenedor{
+                                display: flex;
+                                flex-direction: column-reverse; 
+                            }
+                              
+                            </code></pre>
+                           </td> 
+                      </tr>
+                      <tr>
+                        <td> flex-wrap</td>
+                        <td><img src= flex-wrap.png >
+                        <td>
+                           <pre><code>                      
+                            CSS
+                            .contenedor{
+                                display: flex;
+                                flex-direction: row;
+                                flex-wrap: nowrap; [VALOR POR DEFECTO]
+                            }
+                             
+                            </code></pre>
+                           </td> 
+                      </tr>
+                      <tr>
+                        <td>align-content</td>
+                        <td><img src=align-content.jpg></td>
+                        <td>
+                          <pre><code>                      
+                            CSS
+                            .contenedor{
+                                display: flex;
+                                flex-wrap: wrap;
+                                align-content: flex-start | flex-end | space-between | center | space-around | stretch; 
+                            }                 
+                            </code></pre>
+                           </td>  
+                      </tr>
+                    
+                  </table>
+                
+                </div>
+    <footer>
+        <div>Nombre:</div>
+        <adrees>Nicole Alejandra Uribe Tapia</adrees>
+        <div>UCB</div>
+    </footer>
+</body>
